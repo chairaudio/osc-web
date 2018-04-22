@@ -38,7 +38,7 @@ OSC controllers/applications and the browser.
 First of all, download and install nodejs from http://nodejs.org, then:
 
 #+begin_src sh
-$ git clone git://github.com/automata/osc-web.git
+$ git clone git://github.com/chairaudio/osc-web.git
 $ cd osc-web/
 $ npm install
 #+end_src
