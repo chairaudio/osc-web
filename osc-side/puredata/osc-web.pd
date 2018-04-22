@@ -1,4 +1,4 @@
-#N canvas 2424 357 592 451 10;
+#N canvas 751 270 592 451 10;
 #X obj 220 24 cnv 15 350 400 empty empty Sending 20 20 0 14 -233017
 -66577 0;
 #X msg 273 323 disconnect;
@@ -14,16 +14,15 @@
 #X obj 12 24 cnv 15 200 400 empty empty Receiving 20 20 0 14 -233017
 -66577 0;
 #X obj 29 359 oscparse;
-#X obj 29 319 netreceive 3334 -u -b;
 #X msg 46 284 listen 0;
-#X obj 29 391 print;
-#X floatatom 152 354 5 0 0 0 - - -, f 5;
-#X obj 29 250 cnv 15 85 22 empty empty empty 20 12 0 14 -261234 -66577
+#X obj 27 250 cnv 15 85 22 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X obj 251 295 cnv 15 150 22 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X msg 257 297 connect localhost 3333;
-#X msg 34 253 listen 3334;
+#X msg 29 253 listen 3334;
+#X obj 29 391 print received;
+#X obj 29 319 netreceive -u -b;
 #X connect 1 0 6 0;
 #X connect 3 0 4 0;
 #X connect 4 0 6 0;
@@ -33,9 +32,8 @@
 #X connect 7 0 3 0;
 #X connect 9 0 7 0;
 #X connect 10 0 7 0;
-#X connect 12 0 15 0;
-#X connect 13 0 12 0;
-#X connect 13 1 16 0;
-#X connect 14 0 13 0;
-#X connect 19 0 6 0;
-#X connect 20 0 13 0;
+#X connect 12 0 18 0;
+#X connect 13 0 19 0;
+#X connect 16 0 6 0;
+#X connect 17 0 19 0;
+#X connect 19 0 12 0;
