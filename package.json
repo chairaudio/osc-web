@@ -41,6 +41,6 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/automata/osc-web.git"
+		"url": "git://github.com/chairaudio/osc-web.git"
 	}
 }
